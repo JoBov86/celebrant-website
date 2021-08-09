@@ -32,10 +32,6 @@ h3 {
   color: #721121;
 }
 
-/* h2 {
-  border-bottom: 1px solid #721121;
-} */
-
 h3 {
   font-size: 1.5rem;
 }
@@ -166,7 +162,9 @@ footer {
 .single-photo {
   margin: 2em;
   width: 80%;
-  border: #721121ce 20px solid;
+  padding: 4px;
+  border: #72112186 4px solid;
+  background-color: #ffcf999c;
 }
 .small-print {
   font-size: 0.75rem;
@@ -234,7 +232,7 @@ header {
   padding: 1em;
   color: #721121;
   border-top: 20px solid #721121;
-  border-bottom: 5px solid #721121;
+  /* border-bottom: 5px solid #721121; */
 }
 
 h1 {
@@ -274,6 +272,114 @@ ul {
 .current-page {
   border: #721121 2px solid;
   padding: 0.5em 0;
+}
+
+/* ------------------------------
+  --------- Slideshow container ----------------
+  ------------------------------- */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides p {
+  padding: 2em;
+  font-family: "Amiri";
+  font-size: 1.5rem;
+}
+
+.border-top-left {
+  position: absolute;
+  border: solid 2px #721121;
+  left: 0;
+  width: 10%;
+}
+
+.border-side-left {
+  position: absolute;
+  border: solid 2px #721121;
+  top: 0;
+  left: 0;
+  height: 30%;
+}
+
+.border-bottom-right {
+  position: absolute;
+  border: solid 2px #721121;
+  right: 0;
+  width: 10%;
+}
+
+.border-side-right {
+  position: absolute;
+  border: solid 2px #721121;
+  bottom: 0;
+  right: 0;
+  height: 30%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  right: 100%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #721121;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  left: 100%;
+  right: -10%;
+}
+
+/* The dots/bullets/indicators */
+
+.active:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* ------------------------------
@@ -361,110 +467,5 @@ ul {
 
   .right-photo {
     order: 2;
-  }
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides p {
-  padding: 2em;
-  font-family: "Amiri";
-  font-size: 1.5rem;
-}
-
-.border-top-left {
-  position: absolute;
-  border: solid 2px #721121;
-  left: 0;
-  width: 10%;
-}
-
-.border-side-left {
-  position: absolute;
-  border: solid 2px #721121;
-  top: 0;
-  left: 0;
-  height: 50%;
-}
-
-.border-bottom-right {
-  position: absolute;
-  border: solid 2px #721121;
-  right: 0;
-  width: 10%;
-}
-
-.border-side-right {
-  position: absolute;
-  border: solid 2px #721121;
-  bottom: 0;
-  right: 0;
-  height: 50%;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  left: -10%;
-  right: 100%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #721121;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 50%;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  left: 100%;
-  right: -10%;
-}
-
-/* The dots/bullets/indicators */
-
-.active:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
   }
 }
