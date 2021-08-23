@@ -67,11 +67,11 @@ li {
 }
 
 .footer-text {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 p.footer-text {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 /* --------------------------------------------
@@ -215,6 +215,10 @@ footer {
   border: none;
 }
 
+.about-me-photo {
+  transform: scale(0.75);
+  margin: 0;
+}
 /* ------------------------------
   --------- Footer ----------------
   ------------------------------- */
@@ -224,7 +228,7 @@ footer {
 }
 
 .social {
-  font-size: 3rem;
+  font-size: 2rem;
   color: rgba(255, 255, 255, 0.4);
   margin: 0 0.5em;
   transform: scale(1);
@@ -243,14 +247,13 @@ footer {
 
 header {
   background-color: #ffcf99;
-  padding: 1em;
+  padding: 1em 1em 0;
   color: #721121;
   border-top: 20px solid #721121;
-  /* border-bottom: 5px solid #721121; */
 }
 
 h1 {
-  padding-top: 1em;
+  padding-bottom: 0.25em;
 }
 
 ul {
@@ -263,7 +266,7 @@ ul {
 .nav-links {
   display: flex;
   flex-direction: column;
-  padding-top: 1em;
+  padding-top: 1.5em;
 }
 
 .nav-link {
@@ -286,6 +289,10 @@ ul {
 .current-page {
   border: #721121 2px solid;
   padding: 0.5em 0;
+}
+
+.container-nav-flex {
+  padding: 1em;
 }
 
 /* ---------------------------------------------
@@ -410,12 +417,8 @@ ul {
     margin: 0 0.5em;
   }
 
-  .profile-flex {
-    flex-direction: row;
-  }
-
   .profile-content {
-    width: 60%;
+    width: 80%;
   }
 
   .current-page {
@@ -433,7 +436,7 @@ ul {
   }
 
   .single-photo {
-    margin: 1em 2em;
+    /* margin: 1em 2em; */
     max-width: 60%;
   }
   .flex-container {
@@ -481,5 +484,15 @@ ul {
 
   .right-photo {
     order: 2;
+  }
+  .profile-flex {
+    flex-direction: row;
+  }
+  .profile-content {
+    width: 60%;
+    margin-left: 2em;
+  }
+  .img-profile {
+    transform: scale(1.25);
   }
 }
