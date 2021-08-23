@@ -61,6 +61,19 @@ li {
   color: #721121;
 }
 
+.logo p {
+  font-family: "Satisfy", sans-serif;
+  font-size: 1.5rem;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+}
+
+p.footer-text {
+  font-size: 1rem;
+}
+
 /* --------------------------------------------
   ----------- Layout and styling --------------
   --------------------------------------------- */
@@ -211,8 +224,9 @@ footer {
 }
 
 .social {
+  font-size: 3rem;
   color: rgba(255, 255, 255, 0.4);
-  margin: 0 1em;
+  margin: 0 0.5em;
   transform: scale(1);
   transition: 250ms;
 }
