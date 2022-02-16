@@ -1,12 +1,14 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
   text-align: center;
-  background-color: #fff1e5;
+  background-color: #721121;
 }
 
 /* ------------------------------
@@ -129,7 +131,8 @@ footer {
 }
 
 .img-profile {
-  border-radius: 50%;
+  width: 50%;
+  height: 50%;
 }
 
 .profile-content {
@@ -151,6 +154,10 @@ footer {
 .bg-dark {
   background-color: #fff1e5;
   padding: 3em 0;
+}
+
+.bg-dark-no-padding {
+  background-color: #fff1e5;
 }
 
 .container-img-multiple {
@@ -195,6 +202,7 @@ footer {
 
 .spacing {
   padding-top: 4em;
+  background-color: #fff1e5;
 }
 
 .quote-source {
